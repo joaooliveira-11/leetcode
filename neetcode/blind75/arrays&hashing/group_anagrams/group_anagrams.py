@@ -6,6 +6,7 @@ from typing import List
 
 def groupAnagrams(strs: List[str]) -> List[List[str]]:
     # key: tuple(array[26]), value: list[anagrams]
+    # key: tuple(array[26]), value: list[anagrams]
     anagrams = {}
     for st in strs:
         count = [0] * 26
