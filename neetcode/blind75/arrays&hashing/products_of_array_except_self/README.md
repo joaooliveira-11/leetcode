@@ -1,0 +1,3 @@
+# Notion notes
+
+## LeetCode ID
