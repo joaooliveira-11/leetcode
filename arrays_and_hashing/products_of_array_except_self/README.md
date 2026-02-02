@@ -6,7 +6,3 @@
 - [NeetCode](https://neetcode.io/problems/products-of-array-discluding-self)
 
 **Difficulty:** Medium
-
-## Notion Notes
-
-TODO

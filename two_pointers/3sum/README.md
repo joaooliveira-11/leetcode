@@ -6,7 +6,3 @@
 - [NeetCode](https://neetcode.io/problems/three-integer-sum)
 
 **Difficulty:** Medium
-
-## Notion Notes
-
-TODO

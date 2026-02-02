@@ -6,7 +6,3 @@
 - [NeetCode](https://neetcode.io/problems/max-water-container)
 
 **Difficulty:** Medium
-
-## Notion Notes
-
-TODO

@@ -6,7 +6,3 @@
 - [NeetCode](https://neetcode.io/problems/longest-consecutive-sequence)
 
 **Difficulty:** Medium
-
-## Notion Notes
-
-TODO

@@ -7,6 +7,3 @@
 
 **Difficulty:** Easy
 
-## Notion Notes
-
-TODO
