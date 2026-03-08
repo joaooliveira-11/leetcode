@@ -5,21 +5,15 @@ from typing import List
 # where m is the number of strings and n is the length of the longest string.
 
 def groupAnagrams(strs: List[str]) -> List[List[str]]:
-    # key: tuple(array[26]), value: list[anagrams]
-    # key: tuple(array[26]), value: list[anagrams]
-    anagrams = {}
-    for st in strs:
+        
+    group_dict = defaultdict(list)
+    for s in strs:
         count = [0] * 26
-        for c in st:
-            count[ord(c) - ord('a')] +=1
+        for c in s:
+            k = ord(c) - ord('a')
+            count[k] += 1
         key = tuple(count)
-        if key in anagrams:
-            anagrams[key].append(st)
-        else:
-            anagrams[key] = [st]
 
-    return list(anagrams.values())
+        group_dict[key].append(s)
 
-if __name__ == "__main__":
-    print(groupAnagrams(strs = ["act","pots","tops","cat","stop","hat"]))
-
+    return list(group_dict.values())
