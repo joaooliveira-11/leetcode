@@ -1,19 +1,12 @@
 from typing import List
 
 def twoSum(nums: List[int], target: int) -> List[int]:
-    differences_map = {}
+    diff_dict = {}
 
-    for i, num in enumerate(nums):
-        target_diff = target - num
-        target_diff_i = differences_map.get(target_diff) 
+    for i in range(len(nums)):
+        if nums[i] in diff_dict:
+            return [diff_dict[nums[i]], i]
 
-        if target_diff_i is not None and target_diff_i != i:
-            return [target_diff_i, i]
+        diff_dict[target - nums[i]] = i
 
-        differences_map[num] = i
-    return []
-
-
-if __name__ == "__main__":
-    print(twoSum(nums = [4,5,6], target = 10))
-    print(twoSum(nums = [5,5], target = 10))
+    return []  
