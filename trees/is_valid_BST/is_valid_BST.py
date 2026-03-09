@@ -4,27 +4,17 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-
 class Solution:
-    def isValidBST(self, root: Optional[TreeNode]) -> bool: 
-
-        def validate(node, min_val, max_val):
-
-            if not node:
+    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+        
+        def validate(root, min, max):
+            if not root:
                 return True
 
-            if not (min_val < node.val < max_val):
+            if not min < root.val < max:
                 return False
 
-            return (validate(node.left, min_val, node.val) and validate(node.right, node.val, max_val))
+            return validate(root.left, min, root.val) and validate(root.right, root.val, max)
 
-
-        return validate(root, float('-inf'), float('inf'))
-        
-        
-        
-        
-
-        
-        
-        
+        return validate(root, -float('inf'), float('inf'))
+            
