@@ -5,12 +5,3 @@
 
 My solutions to LeetCode problems, organized by category. Problems are sourced from the [NeetCode Blind 75](https://neetcode.io/roadmap) roadmap and more.
 
-## 📊 Progress
-
-| Category | Easy | Medium | Hard | Total |
-|----------|------|--------|------|-------|
-| Arrays & Hashing | 3 | 4 | 0 | **7** |
-| Two Pointers | 1 | 2 | 0 | **3** |
-| **Total** | **4** | **6** | **0** | **10** |
-
----
